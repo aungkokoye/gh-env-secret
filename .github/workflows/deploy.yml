@@ -9,7 +9,7 @@ env:
   PORT: 8080
 jobs:
   test:
-    #environment: testing
+    environment: testing # specify the environment name for Repo Environments secret access
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.n9bgfdr.mongodb.net
